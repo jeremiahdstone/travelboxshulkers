@@ -14,14 +14,13 @@ Travel Boxes are intentionally slightly weaker than regular shulker boxes: carry
 
 ## Encumbrance
 
-When you carry multiple Travel Boxes, you begin to feel an effect called **Encumbrance**. Encumbrance negatively impacts your movement speed.
+Carrying empty Travel Boxes does not negatively affect you. However, if your Travel Box contains any amount of items, it begins to give you **Encumbrance**. Encumbrance negatively affects your movement speed.
 
-Carrying zero or one Travel Box has no movement penalty. The default penalties are:
+Carrying 0-2 Travel Box has no movement penalty. The default penalties are:
 
 | Travel Boxes carried | Movement speed |
 | --- | --- |
-| 0-1 | 100% |
-| 2 | 95% |
+| 0-2 | 100% |
 | 3 | 90% |
 | 4 | 85% |
 | 5 | 75% |
