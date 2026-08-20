@@ -1,0 +1,1 @@
+scoreboard players set #encumbrance_enabled travelbox_config 1

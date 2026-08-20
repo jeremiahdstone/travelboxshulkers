@@ -1,0 +1,2 @@
+execute if score #encumbrance_enabled travelbox_config matches 1 run function travelbox:encumbrance_disable
+execute unless score #encumbrance_enabled travelbox_config matches 1 run function travelbox:encumbrance_enable

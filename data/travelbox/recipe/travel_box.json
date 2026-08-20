@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "BDB",
+    "ACA"
+  ],
+  "key": {
+    "A": "minecraft:leather",
+    "B": "minecraft:string",
+    "C": "minecraft:gold_ingot",
+    "D": "minecraft:chest"
+  },
+  "result": {
+    "id": "minecraft:brown_shulker_box",
+    "count": 1,
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Travel Box",
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "travel_box": true
+      }
+    }
+  }
+}

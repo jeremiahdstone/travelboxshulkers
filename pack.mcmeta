@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Adds a recipe for an early game shulker called a 'Travel Box' (looks like a brown shulker box)",
+    "min_format": [
+      107,
+      1
+    ],
+    "max_format": 107
+  }
+}
