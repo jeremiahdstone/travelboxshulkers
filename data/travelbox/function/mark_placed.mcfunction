@@ -1,0 +1,6 @@
+execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ #minecraft:shulker_boxes unless data block ~ ~ ~ components."minecraft:custom_data".travel_box run data merge block ~ ~ ~ {components:{"minecraft:custom_data":{travel_box:true}}}
+execute anchored eyes positioned ^ ^ ^2 if block ~ ~ ~ #minecraft:shulker_boxes unless data block ~ ~ ~ components."minecraft:custom_data".travel_box run data merge block ~ ~ ~ {components:{"minecraft:custom_data":{travel_box:true}}}
+execute anchored eyes positioned ^ ^ ^3 if block ~ ~ ~ #minecraft:shulker_boxes unless data block ~ ~ ~ components."minecraft:custom_data".travel_box run data merge block ~ ~ ~ {components:{"minecraft:custom_data":{travel_box:true}}}
+execute anchored eyes positioned ^ ^ ^4 if block ~ ~ ~ #minecraft:shulker_boxes unless data block ~ ~ ~ components."minecraft:custom_data".travel_box run data merge block ~ ~ ~ {components:{"minecraft:custom_data":{travel_box:true}}}
+execute anchored eyes positioned ^ ^ ^5 if block ~ ~ ~ #minecraft:shulker_boxes unless data block ~ ~ ~ components."minecraft:custom_data".travel_box run data merge block ~ ~ ~ {components:{"minecraft:custom_data":{travel_box:true}}}
+advancement revoke @s only travelbox:placed_travel_box

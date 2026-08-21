@@ -18,10 +18,10 @@ scoreboard players set @s travel_boxes 0
 # =========================================================
 
 # LEGACY: ALL travel boxes, empty or full, apply encumbrance. Now, its only if they have items in them.
-# execute if score #encumbrance_enabled travelbox_config matches 1 store result score @s travel_boxes run clear @s minecraft:brown_shulker_box[minecraft:custom_data~{travel_box:true}] 0
+# execute if score #encumbrance_enabled travelbox_config matches 1 store result score @s travel_boxes run clear @s #minecraft:shulker_boxes[minecraft:custom_data~{travel_box:true}] 0
 
 # NEW: Encumbrance only applied if there are items in it
-execute if score #encumbrance_enabled travelbox_config matches 1 store result score @s travel_boxes run clear @s minecraft:brown_shulker_box[minecraft:custom_data~{travel_box:true},minecraft:container~{items:{size:{min:1}}}] 0
+execute if score #encumbrance_enabled travelbox_config matches 1 store result score @s travel_boxes run clear @s #minecraft:shulker_boxes[minecraft:custom_data~{travel_box:true},minecraft:container~{items:{size:{min:1}}}] 0
 
 # =========================================================
 # APPLY ENCUMBRANCE

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "placed_travel_box": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "#minecraft:shulker_boxes",
+        "item": {
+          "items": "#minecraft:shulker_boxes",
+          "components": {
+            "minecraft:custom_data": {
+              "travel_box": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "travelbox:mark_placed"
+  }
+}
