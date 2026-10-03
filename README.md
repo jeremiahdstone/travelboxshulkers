@@ -7,7 +7,7 @@ Travel Boxes are intentionally slightly weaker than regular shulker boxes: carry
 ## What it adds
 
 - A craftable item called the **Travel Box**.
-- A brown shulker box appearance so it can be used like other shulker boxes.
+- A brown shulker box appearance that behaves like a normal shulker box.
 - A recipe using leather, string, gold ingots, and a chest.
 - Automatic detection of Travel Boxes in the player's inventory and offhand.
 - Movement-speed penalties based on how many Travel Boxes the player carries.
@@ -16,28 +16,29 @@ Travel Boxes are intentionally slightly weaker than regular shulker boxes: carry
 
 Carrying empty Travel Boxes does not negatively affect you. However, if your Travel Box contains any amount of items, it begins to give you **Encumbrance**. Encumbrance negatively affects your movement speed.
 
-Carrying 0-2 Travel Box has no movement penalty. The default penalties are:
+The default encumbrance thresholds are:
 
-| Travel Boxes carried | Movement speed |
+| Filled Travel Boxes | Movement speed |
 | --- | --- |
-| 0-2 | 100% |
+| 0–1 | 100% |
+| 2 | 95% |
 | 3 | 90% |
 | 4 | 85% |
 | 5 | 75% |
 | 6 | 65% |
 | 7 | 55% |
-| 8 or more | 45% |
+| 8+ | 45% |
 
-The datapack counts Travel Boxes by their internal marker rather than by color alone. This prevents ordinary brown shulker boxes from being treated as Travel Boxes.
+The global speed modifier is recalculated every tick by `travelbox:update_player`, which removes the old modifier, counts the player's non-empty Travel Boxes, and reapplies the penalty for the new total.
 
 ## Progression role
 
-Travel Boxes are designed for the part of the game before shulker boxes are readily available. Their recipe uses accessible overworld materials, but the movement penalty discourages carrying large numbers of them as a permanent replacement for End-game storage.
+Travel Boxes are designed for the part of the game before shulker boxes are widely available or before the player has ready access to shulker shells. Their recipe uses accessible overworld materials, but the movement penalty discourages carrying large numbers as a permanent replacement for proper shulker boxes.
 
-Once regular shulker boxes become available, they remain the stronger option because they do not apply Travel Box encumbrance.
+Once regular shulker boxes are available, they remain the stronger option because they do not apply Travel Box encumbrance.
 
 ## Configuration
 
-Encumbrance is enabled by default. Operators can enable, disable, or toggle it with the functions documented in [CONFIGURATION.md](CONFIGURATION.md).
+Encumbrance is enabled by default. Operators can enable, disable, or toggle it globally with the public functions described in [CONFIGURATION.md](CONFIGURATION.md).
 
-The setting is global and affects all players in the world.
+The setting is global and affects every player in the world.
